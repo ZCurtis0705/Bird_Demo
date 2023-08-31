@@ -48,14 +48,19 @@ public class Vendor : MonoBehaviour
         {
             //If cam lvl = 1, want price of cam_lvl 2
             //cam_lvl 2 is stored in active_prices[0]
-            idx = 0;
+            idx = p.cam_lvl - 1;
+        } else
+        {
+            idx = p.stealth_lvl - 1;
         }
         
 
         if (idx < 2)
         {
-            print(idx);
+            
             GameObject.FindGameObjectWithTag("Vending").GetComponent<NoticeScreen>().open("Upgrade " + this.type_str + "? \n Next upgrade costs: " + active_prices[idx]);
+            idx++;
+            print(idx);
         }
         else
         {
