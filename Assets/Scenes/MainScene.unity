@@ -25545,7 +25545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balance: 0
-  cam_lvl: 1
+  cam_lvl: 3
   stealth_lvl: 1
 --- !u!1 &1693443373
 GameObject:

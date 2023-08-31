@@ -82,18 +82,24 @@ public class Vendor : MonoBehaviour
             return;
         }
 
-        p.balance -= active_prices[idx];
-        idx++;
-        if (type == 0)
+        if (p.balance >= active_prices[idx])
         {
-            //If cam lvl = 1, want price of cam_lvl 2
-            //cam_lvl 2 is stored in active_prices[0]
-            p.cam_lvl++;
+            p.balance -= active_prices[idx];
+            idx++;
+            if (type == 0)
+            {
+                //If cam lvl = 1, want price of cam_lvl 2
+                //cam_lvl 2 is stored in active_prices[0]
+                p.cam_lvl++;
+            }
+            else
+            {
+                p.stealth_lvl++;
+            }
         }
-        else
-        {
-            p.stealth_lvl++;
-        }
+       
         updateMessage();
+       
     }
+
 }
