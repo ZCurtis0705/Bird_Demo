@@ -25545,7 +25545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balance: 0
-  cam_lvl: 3
+  cam_lvl: 1
   stealth_lvl: 1
 --- !u!1 &1693443373
 GameObject:
@@ -26700,5 +26700,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeCover
       objectReference: {fileID: 0}
+    - target: {fileID: 5251846847388609177, guid: f01f572d3742f0a41baa053baba626e7,
+        type: 3}
+      propertyPath: birdsContained.Array.data[0]
+      value: 
+      objectReference: {fileID: 1670340708570714559, guid: 01ebcaf59a265dd41929fe77687af17c,
+        type: 3}
+    - target: {fileID: 5251846847388609177, guid: f01f572d3742f0a41baa053baba626e7,
+        type: 3}
+      propertyPath: birdsContained.Array.data[1]
+      value: 
+      objectReference: {fileID: 3568656555868795596, guid: 8cb1ea141d36e4a42bd3523e0ec85d67,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01f572d3742f0a41baa053baba626e7, type: 3}
