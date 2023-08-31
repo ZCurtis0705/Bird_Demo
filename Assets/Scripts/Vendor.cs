@@ -50,13 +50,11 @@ public class Vendor : MonoBehaviour
             //cam_lvl 2 is stored in active_prices[0]
             idx = 0;
         }
-        else
-        {
-            idx = -2;
-        }
+        
 
         if (idx < 2)
         {
+            print(idx);
             GameObject.FindGameObjectWithTag("Vending").GetComponent<NoticeScreen>().open("Upgrade " + this.type_str + "? \n Next upgrade costs: " + active_prices[idx]);
         }
         else
